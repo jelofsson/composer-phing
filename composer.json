@@ -1,0 +1,17 @@
+{
+  "name": "humanit-se/composer-phing",
+  "description": "Composer script that runs Phing build-script for installed packages",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jamie Telin",
+      "email": "jamie.telin@gmail.com"
+    }
+  ],
+  "require": {
+    "phing/phing": "2.*"
+  },
+  "autoload": {
+    "psr-4": {"ComposerPhing\\": "src/ComposerPhing"}
+  }
+}
