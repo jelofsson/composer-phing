@@ -27,8 +27,8 @@ class Packages
         foreach ($packages as $package) {
             $installPath = $installationManager->getInstallPath($package);
             if (is_file("{$installPath}/build.xml")) {
-                var_dump("Executing; ant -buildfile {$installPath}/build.xml {$task}");
-                shell_exec("ant -buildfile {$installPath}/build.xml {$task}");
+                var_dump("Executing; phing -buildfile {$installPath}/build.xml {$task}");
+                shell_exec("phing -buildfile {$installPath}/build.xml {$task}");
             }
         }
     }
