@@ -30,10 +30,7 @@ class Packages
         $packages = $localRepository->getPackages();
         $log->info("Found (" . count($packages) . ") packages");
 
-        $task = '';
-        if (isset($args[0])) {
-          $task = $args[0];
-        }
+        $task = isset($args[0]) ? $args[0] : '';
 
         foreach ($packages as $package) {
             $installPath = $installationManager->getInstallPath($package);
