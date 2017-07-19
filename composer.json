@@ -9,7 +9,9 @@
     }
   ],
   "require": {
-    "phing/phing": "2.*"
+    "phing/phing": "2.*",
+    "monolog/monolog": "1.23.*",
+    "bramus/monolog-colored-line-formatter": "2.*"
   },
   "autoload": {
     "psr-4": {"ComposerPhing\\": "src/ComposerPhing"}
